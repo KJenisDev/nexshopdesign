@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Medium.otf">
+            <string>Metropolis-Medium</string>
+        </array>
+        <array key="Metropolis-Regular.ttf">
+            <string>Metropolis-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="105" id="KGk-i7-Jjw" customClass="OrderTrackingHeaderXIB" customModule="Nexshop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YjS-cs-0Pq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9W-Xi-ZJY">
+                                <rect key="frame" x="10" y="10" width="185" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="MG1-EQ-zms"/>
+                                    <constraint firstAttribute="height" constant="20" id="nE5-dh-hag"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgH-HX-4WH">
+                                <rect key="frame" x="10" y="35" width="300" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="xL6-tt-Dtv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guaranteed Delivery:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g12-Ac-eLD">
+                                <rect key="frame" x="10" y="41" width="185" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="BpM-1H-aV0"/>
+                                    <constraint firstAttribute="width" constant="185" id="X9H-GW-OdW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                <color key="textColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6f-Vg-MBU">
+                                <rect key="frame" x="10" y="71" width="295" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="CwP-x4-GNd"/>
+                                    <constraint firstAttribute="height" constant="20" id="uSr-K5-j3v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="18"/>
+                                <color key="textColor" red="0.17254901960784313" green="0.32156862745098036" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="y9W-Xi-ZJY" firstAttribute="top" secondItem="YjS-cs-0Pq" secondAttribute="top" constant="10" id="33g-Mm-L2k"/>
+                            <constraint firstItem="y9W-Xi-ZJY" firstAttribute="leading" secondItem="YjS-cs-0Pq" secondAttribute="leading" constant="10" id="E71-ez-wGq"/>
+                            <constraint firstItem="g12-Ac-eLD" firstAttribute="leading" secondItem="YjS-cs-0Pq" secondAttribute="leading" constant="10" id="FDh-b8-IPX"/>
+                            <constraint firstItem="Q6f-Vg-MBU" firstAttribute="top" secondItem="g12-Ac-eLD" secondAttribute="bottom" constant="10" id="QIC-Sz-c3d"/>
+                            <constraint firstItem="Q6f-Vg-MBU" firstAttribute="leading" secondItem="YjS-cs-0Pq" secondAttribute="leading" constant="10" id="V3k-7q-wI7"/>
+                            <constraint firstItem="LgH-HX-4WH" firstAttribute="top" secondItem="y9W-Xi-ZJY" secondAttribute="bottom" constant="5" id="mxd-Rp-4dd"/>
+                            <constraint firstAttribute="trailing" secondItem="LgH-HX-4WH" secondAttribute="trailing" constant="10" id="sDZ-xR-2Pk"/>
+                            <constraint firstItem="LgH-HX-4WH" firstAttribute="leading" secondItem="YjS-cs-0Pq" secondAttribute="leading" constant="10" id="skD-Hk-kIZ"/>
+                            <constraint firstItem="g12-Ac-eLD" firstAttribute="top" secondItem="LgH-HX-4WH" secondAttribute="bottom" constant="5" id="wvx-dY-acM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="YjS-cs-0Pq" secondAttribute="trailing" id="38V-S6-ANd"/>
+                    <constraint firstItem="YjS-cs-0Pq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Nbz-eX-5Ck"/>
+                    <constraint firstAttribute="bottom" secondItem="YjS-cs-0Pq" secondAttribute="bottom" id="Snf-gS-WKw"/>
+                    <constraint firstItem="YjS-cs-0Pq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bmR-Ft-HYz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblDate" destination="Q6f-Vg-MBU" id="HkL-Fj-VKi"/>
+                <outlet property="lblOrderid" destination="y9W-Xi-ZJY" id="fj8-do-duC"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

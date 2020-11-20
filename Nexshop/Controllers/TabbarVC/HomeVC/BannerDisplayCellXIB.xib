@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BannerDisplayCellXIB" customModule="Nexshop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ2-Ca-EDc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rT9-pC-EYz">
+                                <rect key="frame" x="10" y="10" width="300" height="130"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z17-Oj-UBo">
+                                <rect key="frame" x="10" y="10" width="300" height="130"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rT9-pC-EYz" firstAttribute="top" secondItem="ZQ2-Ca-EDc" secondAttribute="top" constant="10" id="0W9-nX-9Vm"/>
+                            <constraint firstAttribute="trailing" secondItem="Z17-Oj-UBo" secondAttribute="trailing" constant="10" id="14A-YB-hF7"/>
+                            <constraint firstAttribute="trailing" secondItem="rT9-pC-EYz" secondAttribute="trailing" constant="10" id="5Ai-rf-qgY"/>
+                            <constraint firstItem="Z17-Oj-UBo" firstAttribute="top" secondItem="ZQ2-Ca-EDc" secondAttribute="top" constant="10" id="P9O-3C-uif"/>
+                            <constraint firstAttribute="bottom" secondItem="rT9-pC-EYz" secondAttribute="bottom" constant="10" id="eor-sb-Wdb"/>
+                            <constraint firstAttribute="bottom" secondItem="Z17-Oj-UBo" secondAttribute="bottom" constant="10" id="m2q-dF-rsB"/>
+                            <constraint firstItem="Z17-Oj-UBo" firstAttribute="leading" secondItem="ZQ2-Ca-EDc" secondAttribute="leading" constant="10" id="s1g-Oy-rQu"/>
+                            <constraint firstItem="rT9-pC-EYz" firstAttribute="leading" secondItem="ZQ2-Ca-EDc" secondAttribute="leading" constant="10" id="umq-Cd-HS3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZQ2-Ca-EDc" secondAttribute="bottom" id="3AN-Uh-KIz"/>
+                <constraint firstItem="ZQ2-Ca-EDc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FZW-UI-Rwa"/>
+                <constraint firstAttribute="trailing" secondItem="ZQ2-Ca-EDc" secondAttribute="trailing" id="Wfm-2S-9eV"/>
+                <constraint firstItem="ZQ2-Ca-EDc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="prC-dw-ioG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="btnTitlePic" destination="Z17-Oj-UBo" id="iFI-9f-3wi"/>
+                <outlet property="imgviewPic" destination="rT9-pC-EYz" id="veR-NJ-d3C"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="154"/>
+        </collectionViewCell>
+    </objects>
+</document>

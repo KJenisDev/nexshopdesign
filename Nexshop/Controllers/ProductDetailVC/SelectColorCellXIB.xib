@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelectColorCellXIB" id="gTV-IL-0wX" customClass="SelectColorCellXIB" customModule="Nexshop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kvc-QC-Kis">
+                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oWD-nw-GcW">
+                                <rect key="frame" x="5" y="5" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_selectedMarathon" translatesAutoresizingMaskIntoConstraints="NO" id="mOM-pt-XeZ">
+                                        <rect key="frame" x="15" y="15" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="7Nw-zs-RVS"/>
+                                            <constraint firstAttribute="width" constant="20" id="iAm-rJ-COt"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="mOM-pt-XeZ" firstAttribute="centerY" secondItem="oWD-nw-GcW" secondAttribute="centerY" id="GTK-No-zD0"/>
+                                    <constraint firstItem="mOM-pt-XeZ" firstAttribute="centerX" secondItem="oWD-nw-GcW" secondAttribute="centerX" id="eIS-rJ-ypv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oWD-nw-GcW" firstAttribute="leading" secondItem="kvc-QC-Kis" secondAttribute="leading" constant="5" id="3eG-ct-i9M"/>
+                            <constraint firstAttribute="trailing" secondItem="oWD-nw-GcW" secondAttribute="trailing" constant="5" id="9AP-IL-4w4"/>
+                            <constraint firstItem="oWD-nw-GcW" firstAttribute="top" secondItem="kvc-QC-Kis" secondAttribute="top" constant="5" id="ZIP-Za-SrY"/>
+                            <constraint firstAttribute="bottom" secondItem="oWD-nw-GcW" secondAttribute="bottom" constant="5" id="eWp-Wn-byM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kvc-QC-Kis" secondAttribute="trailing" id="38c-XH-erz"/>
+                <constraint firstAttribute="bottom" secondItem="kvc-QC-Kis" secondAttribute="bottom" id="Jne-Zq-fCZ"/>
+                <constraint firstItem="kvc-QC-Kis" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XWq-a0-AXv"/>
+                <constraint firstItem="kvc-QC-Kis" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ZbR-pT-6iL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="imgviewSelect" destination="mOM-pt-XeZ" id="Qf1-fg-zqT"/>
+                <outlet property="viewBackground" destination="oWD-nw-GcW" id="GvQ-Eh-iDe"/>
+            </connections>
+            <point key="canvasLocation" x="133" y="154"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_selectedMarathon" width="19" height="20"/>
+    </resources>
+</document>

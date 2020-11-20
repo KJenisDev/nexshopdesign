@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Light.ttf">
+            <string>Metropolis-Light</string>
+        </array>
+        <array key="Metropolis-Medium.otf">
+            <string>Metropolis-Medium</string>
+        </array>
+        <array key="Metropolis-SemiBold.otf">
+            <string>Metropolis-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="130" id="KGk-i7-Jjw" customClass="OrderTrackingAddressCellXIB" customModule="Nexshop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQN-DI-Qx9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shipping Address:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Is-re-7Yf">
+                                <rect key="frame" x="10" y="10" width="185" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="KLm-nc-uqr"/>
+                                    <constraint firstAttribute="height" constant="30" id="rQO-wh-gBb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wfg-bQ-OGr">
+                                <rect key="frame" x="10" y="50" width="300" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="8ue-r3-JMN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorriane C. Zendejas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g69-63-6ma">
+                                <rect key="frame" x="10" y="61" width="214" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="Tpd-fa-laR"/>
+                                    <constraint firstAttribute="height" constant="20" id="shK-Kz-vOW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="14"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2k-71-U2D">
+                                <rect key="frame" x="244" y="61" width="65.5" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65.5" id="2vf-ZM-2zf"/>
+                                    <constraint firstAttribute="height" constant="20" id="qI1-7U-erO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.17254901959999999" green="0.32156862749999998" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4415 Ferguson Street, Framingham MA, Massachusetts, 01702 508-424-9604. mo.-774-424-6712" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95t-Kx-7aI">
+                                <rect key="frame" x="10" y="91" width="300" height="30"/>
+                                <fontDescription key="fontDescription" name="Metropolis-Light" family="Metropolis" pointSize="12"/>
+                                <color key="textColor" red="0.71764705880000002" green="0.71764705880000002" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="g69-63-6ma" firstAttribute="top" secondItem="Wfg-bQ-OGr" secondAttribute="bottom" constant="10" id="1Ow-d4-IeB"/>
+                            <constraint firstItem="95t-Kx-7aI" firstAttribute="top" secondItem="g69-63-6ma" secondAttribute="bottom" constant="10" id="3Kl-bh-igi"/>
+                            <constraint firstItem="95t-Kx-7aI" firstAttribute="leading" secondItem="BQN-DI-Qx9" secondAttribute="leading" constant="10" id="K3g-Ar-XUb"/>
+                            <constraint firstItem="Wfg-bQ-OGr" firstAttribute="top" secondItem="7Is-re-7Yf" secondAttribute="bottom" constant="10" id="KkS-bW-yAf"/>
+                            <constraint firstItem="g69-63-6ma" firstAttribute="leading" secondItem="BQN-DI-Qx9" secondAttribute="leading" constant="10" id="L6H-1U-3Za"/>
+                            <constraint firstItem="O2k-71-U2D" firstAttribute="top" secondItem="Wfg-bQ-OGr" secondAttribute="bottom" constant="10" id="LeM-zK-8oz"/>
+                            <constraint firstAttribute="bottom" secondItem="95t-Kx-7aI" secondAttribute="bottom" constant="9" id="OFD-Vv-91b"/>
+                            <constraint firstItem="7Is-re-7Yf" firstAttribute="leading" secondItem="BQN-DI-Qx9" secondAttribute="leading" constant="10" id="OVI-82-gs2"/>
+                            <constraint firstAttribute="bottom" secondItem="95t-Kx-7aI" secondAttribute="bottom" constant="9" id="TWo-Zq-f6A"/>
+                            <constraint firstAttribute="trailing" secondItem="95t-Kx-7aI" secondAttribute="trailing" constant="10" id="UpE-va-CSc"/>
+                            <constraint firstAttribute="trailing" secondItem="Wfg-bQ-OGr" secondAttribute="trailing" constant="10" id="YtW-TU-476"/>
+                            <constraint firstItem="7Is-re-7Yf" firstAttribute="top" secondItem="BQN-DI-Qx9" secondAttribute="top" constant="10" id="bRc-io-pDf"/>
+                            <constraint firstItem="Wfg-bQ-OGr" firstAttribute="leading" secondItem="BQN-DI-Qx9" secondAttribute="leading" constant="10" id="dtp-Cg-el6"/>
+                            <constraint firstAttribute="trailing" secondItem="O2k-71-U2D" secondAttribute="trailing" constant="10.5" id="yRS-J2-mhf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="BQN-DI-Qx9" secondAttribute="bottom" id="hBA-DQ-r8D"/>
+                    <constraint firstItem="BQN-DI-Qx9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iSf-ur-hlK"/>
+                    <constraint firstAttribute="trailing" secondItem="BQN-DI-Qx9" secondAttribute="trailing" id="u0D-5b-v1W"/>
+                    <constraint firstItem="BQN-DI-Qx9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zhr-Wa-g77"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblAddress" destination="95t-Kx-7aI" id="Wdo-kd-0Bx"/>
+                <outlet property="lblName" destination="g69-63-6ma" id="NKn-0t-Ngs"/>
+                <outlet property="lblType" destination="O2k-71-U2D" id="i49-vi-CLi"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

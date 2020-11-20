@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Regular.ttf">
+            <string>Metropolis-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="40" id="KGk-i7-Jjw" customClass="CheckOutCellXIB" customModule="Nexshop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Vb-Km-48A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_check_blue" translatesAutoresizingMaskIntoConstraints="NO" id="ltj-gZ-yad">
+                                <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                <color key="tintColor" red="0.17254901959999999" green="0.32156862749999998" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="7pD-0T-WTu"/>
+                                    <constraint firstAttribute="height" constant="20" id="Nim-EC-8CO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UPI (Phonepe / Google Pay / BHIM)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1u-pn-GDk">
+                                <rect key="frame" x="40" y="10" width="270" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="gG2-ak-rd9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ltj-gZ-yad" secondAttribute="bottom" constant="10" id="0bw-iA-Kdk"/>
+                            <constraint firstItem="a1u-pn-GDk" firstAttribute="top" secondItem="0Vb-Km-48A" secondAttribute="top" constant="10" id="ISD-ga-xIp"/>
+                            <constraint firstItem="ltj-gZ-yad" firstAttribute="leading" secondItem="0Vb-Km-48A" secondAttribute="leading" constant="10" id="Iy5-bk-FxO"/>
+                            <constraint firstItem="ltj-gZ-yad" firstAttribute="top" secondItem="0Vb-Km-48A" secondAttribute="top" constant="10" id="OnO-iL-56S"/>
+                            <constraint firstAttribute="bottom" secondItem="a1u-pn-GDk" secondAttribute="bottom" constant="10" id="coh-DD-TYd"/>
+                            <constraint firstItem="a1u-pn-GDk" firstAttribute="leading" secondItem="ltj-gZ-yad" secondAttribute="trailing" constant="10" id="tyc-GI-Fpq"/>
+                            <constraint firstAttribute="trailing" secondItem="a1u-pn-GDk" secondAttribute="trailing" constant="10" id="uct-Ow-TvU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0Vb-Km-48A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XXq-4D-P8e"/>
+                    <constraint firstAttribute="trailing" secondItem="0Vb-Km-48A" secondAttribute="trailing" id="c4t-9K-rpP"/>
+                    <constraint firstItem="0Vb-Km-48A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ks2-sb-wXT"/>
+                    <constraint firstAttribute="bottom" secondItem="0Vb-Km-48A" secondAttribute="bottom" id="qa9-Ru-gOL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgviewCheck" destination="ltj-gZ-yad" id="42r-s4-4CQ"/>
+                <outlet property="lblPayment" destination="a1u-pn-GDk" id="zhR-Ms-clu"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="154"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_check_blue" width="144" height="144"/>
+    </resources>
+</document>

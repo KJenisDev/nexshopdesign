@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Regular.ttf">
+            <string>Metropolis-Regular</string>
+        </array>
+        <array key="Metropolis-SemiBold.ttf">
+            <string>Metropolis-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="NoDataCartHeaderCellXIB" rowHeight="300" id="KGk-i7-Jjw" customClass="NoDataCartHeaderCellXIB" customModule="Nexshop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfd-Xh-tQM">
+                        <rect key="frame" x="70" y="5" width="180" height="180"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 12365" translatesAutoresizingMaskIntoConstraints="NO" id="lBB-Sa-Spa">
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lBB-Sa-Spa" firstAttribute="leading" secondItem="xfd-Xh-tQM" secondAttribute="leading" id="2mi-tJ-9hj"/>
+                            <constraint firstAttribute="height" constant="180" id="9OU-fb-MAE"/>
+                            <constraint firstItem="lBB-Sa-Spa" firstAttribute="top" secondItem="xfd-Xh-tQM" secondAttribute="top" id="Rrj-7K-fNl"/>
+                            <constraint firstAttribute="trailing" secondItem="lBB-Sa-Spa" secondAttribute="trailing" id="mpM-uq-X46"/>
+                            <constraint firstAttribute="bottom" secondItem="lBB-Sa-Spa" secondAttribute="bottom" id="wQ5-Rf-htm"/>
+                            <constraint firstAttribute="width" constant="180" id="y5b-58-Szd"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Cart is Empty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSU-9J-lyk">
+                        <rect key="frame" x="60" y="205" width="200" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="4Qy-kx-eLr"/>
+                            <constraint firstAttribute="width" constant="200" id="gFI-JS-LtW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNR-QD-2LC">
+                        <rect key="frame" x="35" y="242" width="250" height="40"/>
+                        <color key="backgroundColor" red="0.17254901959999999" green="0.32156862749999998" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Rnb-cc-47K"/>
+                            <constraint firstAttribute="width" constant="250" id="pxt-8T-hi9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="17"/>
+                        <state key="normal" title="Shop Now">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="gNR-QD-2LC" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="D2j-Tq-cJY"/>
+                    <constraint firstItem="OSU-9J-lyk" firstAttribute="top" secondItem="xfd-Xh-tQM" secondAttribute="bottom" constant="20" id="IUB-gf-gPW"/>
+                    <constraint firstItem="xfd-Xh-tQM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Mat-Nz-0nz"/>
+                    <constraint firstItem="OSU-9J-lyk" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="QrI-2Q-zdf"/>
+                    <constraint firstItem="gNR-QD-2LC" firstAttribute="top" secondItem="OSU-9J-lyk" secondAttribute="bottom" constant="7" id="g0B-jB-2Jf"/>
+                    <constraint firstItem="xfd-Xh-tQM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="sqy-Oe-Md3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bttnTitleShopNow" destination="gNR-QD-2LC" id="EyF-ET-2te"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="154"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Group 12365" width="217" height="182"/>
+    </resources>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Light.ttf">
+            <string>Metropolis-Light</string>
+        </array>
+        <array key="Metropolis-Regular.ttf">
+            <string>Metropolis-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="201" id="KGk-i7-Jjw" customClass="ReceiverMessageCellXIB" customModule="Nexshop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="575" height="201"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="575" height="201"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kof-Dw-p6k">
+                        <rect key="frame" x="64" y="20" width="355" height="49"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emr-ce-HP5">
+                                <rect key="frame" x="8" y="8" width="339" height="33"/>
+                                <string key="text">Lorem ipsum dolor sit amet, con ctetur adipiscing elit.Nunc pulvinar fringilla venenatis. Suspendisse eleifend fringilla nunc a convallis. Sed maximus nun orci, sed mattis</string>
+                                <fontDescription key="fontDescription" name="Metropolis-Light" family="Metropolis" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9137254901960784" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="emr-ce-HP5" secondAttribute="bottom" constant="8" id="7Cg-OC-YTe"/>
+                            <constraint firstItem="emr-ce-HP5" firstAttribute="top" secondItem="Kof-Dw-p6k" secondAttribute="top" constant="8" id="LwQ-Zy-iwR"/>
+                            <constraint firstItem="emr-ce-HP5" firstAttribute="leading" secondItem="Kof-Dw-p6k" secondAttribute="leading" constant="8" id="YZv-rn-fbY"/>
+                            <constraint firstAttribute="trailing" secondItem="emr-ce-HP5" secondAttribute="trailing" constant="8" id="feL-cF-wUV"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google-hangouts" translatesAutoresizingMaskIntoConstraints="NO" id="riS-wg-bbE">
+                        <rect key="frame" x="16" y="20" width="38" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="GQw-XF-gbi"/>
+                            <constraint firstAttribute="width" constant="38" id="dw0-Mf-T8I"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="19"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2:31 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fug-kj-sJa">
+                        <rect key="frame" x="64" y="73" width="39" height="11"/>
+                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="11"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fug-kj-sJa" firstAttribute="top" secondItem="Kof-Dw-p6k" secondAttribute="bottom" constant="4" id="1sE-FK-SJn"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Kof-Dw-p6k" secondAttribute="bottom" constant="24" id="2EO-qU-Cmc"/>
+                    <constraint firstItem="riS-wg-bbE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="3yx-6X-Z3T"/>
+                    <constraint firstItem="Kof-Dw-p6k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="DcY-6U-5AO"/>
+                    <constraint firstItem="riS-wg-bbE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-4" id="fva-Wn-EEX"/>
+                    <constraint firstItem="fug-kj-sJa" firstAttribute="leading" secondItem="Kof-Dw-p6k" secondAttribute="leading" id="g1K-x6-t8L"/>
+                    <constraint firstItem="Kof-Dw-p6k" firstAttribute="leading" secondItem="riS-wg-bbE" secondAttribute="trailing" constant="10" id="gt0-zI-MVc"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Kof-Dw-p6k" secondAttribute="trailing" constant="135" id="o1B-dU-we4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgviewUser" destination="riS-wg-bbE" id="dy7-2k-Po0"/>
+                <outlet property="lblDate" destination="fug-kj-sJa" id="YVh-wp-oQ3"/>
+                <outlet property="lblMessage" destination="emr-ce-HP5" id="aP7-aK-DqO"/>
+                <outlet property="viewBackground" destination="Kof-Dw-p6k" id="47a-TJ-DSL"/>
+            </connections>
+            <point key="canvasLocation" x="316.66666666666669" y="205.91517857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="google-hangouts" width="26.5" height="26.5"/>
+    </resources>
+</document>

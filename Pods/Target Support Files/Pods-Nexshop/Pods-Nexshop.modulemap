@@ -1,0 +1,6 @@
+framework module Pods_Nexshop {
+  umbrella header "Pods-Nexshop-umbrella.h"
+
+  export *
+  module * { export * }
+}

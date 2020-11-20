@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Regular.otf">
+            <string>Metropolis-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="111" id="KGk-i7-Jjw" customClass="SenderMessageCellXIB" customModule="Nexshop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="401" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="HOD-OW-f2q">
+                        <rect key="frame" x="354" y="12" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="b9m-hZ-rjo"/>
+                            <constraint firstAttribute="height" constant="35" id="qDr-jw-Mcg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="17.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0U-xA-6T7">
+                        <rect key="frame" x="12" y="6" width="330" height="93"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sx1-jl-MWW">
+                                <rect key="frame" x="6" y="6" width="318" height="71"/>
+                                <string key="text">LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel</string>
+                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:00 AM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7c-NZ-Opp">
+                                <rect key="frame" x="279" y="76" width="45" height="11"/>
+                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Sx1-jl-MWW" firstAttribute="top" secondItem="m0U-xA-6T7" secondAttribute="top" constant="6" id="9Ml-C7-5rj"/>
+                            <constraint firstItem="Sx1-jl-MWW" firstAttribute="leading" secondItem="m0U-xA-6T7" secondAttribute="leading" constant="6" id="GiM-SC-CUT"/>
+                            <constraint firstAttribute="bottom" secondItem="Sx1-jl-MWW" secondAttribute="bottom" constant="6" id="Ipy-nY-M8Y"/>
+                            <constraint firstAttribute="trailing" secondItem="p7c-NZ-Opp" secondAttribute="trailing" constant="6" id="dkj-yM-ldj"/>
+                            <constraint firstAttribute="trailing" secondItem="Sx1-jl-MWW" secondAttribute="trailing" constant="6" id="eGE-Qp-p6e"/>
+                            <constraint firstAttribute="bottom" secondItem="p7c-NZ-Opp" secondAttribute="bottom" constant="6" id="wN1-Tg-9Dm"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="m0U-xA-6T7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="53K-90-jjm"/>
+                    <constraint firstAttribute="trailing" secondItem="HOD-OW-f2q" secondAttribute="trailing" constant="12" id="DaJ-9L-7Z5"/>
+                    <constraint firstItem="HOD-OW-f2q" firstAttribute="leading" secondItem="m0U-xA-6T7" secondAttribute="trailing" constant="12" id="MJQ-Uc-VYi"/>
+                    <constraint firstItem="HOD-OW-f2q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="OmR-w9-UxQ"/>
+                    <constraint firstAttribute="bottom" secondItem="m0U-xA-6T7" secondAttribute="bottom" constant="12" id="jr5-qq-xtE"/>
+                    <constraint firstItem="m0U-xA-6T7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="k7p-2Z-JkC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgviewUser" destination="HOD-OW-f2q" id="lJf-jj-0sl"/>
+                <outlet property="lblMessage" destination="Sx1-jl-MWW" id="cJo-Q2-Saa"/>
+                <outlet property="lblTime" destination="p7c-NZ-Opp" id="Fhr-8G-Gkv"/>
+                <outlet property="viewBackground" destination="m0U-xA-6T7" id="2q3-DQ-7zR"/>
+            </connections>
+            <point key="canvasLocation" x="294.92753623188406" y="139.62053571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="facebook" width="14" height="28"/>
+    </resources>
+</document>
